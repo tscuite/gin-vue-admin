@@ -1,6 +1,5 @@
 SHELL = /bin/bash
 
-
 #SCRIPT_DIR         = $(shell pwd)/etc/script
 #请选择golang版本
 BUILD_IMAGE_SERVER  = golang:1.16
