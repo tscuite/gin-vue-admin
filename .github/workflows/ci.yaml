@@ -136,7 +136,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Sed Config
         env:
-          GVA_VERSION=${{ inputs.gva_version }}
+          GVA_VERSION: ${{ inputs.gva_version }}
         shell: bash
         run: |
           sed -i 's/当前版本.*`$/当前版本:v'${GVA_VERSION##v}'`/' web/src/core/config.js
